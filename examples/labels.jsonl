@@ -1,0 +1,200 @@
+{"case_id": "cal-000", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-001", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-002", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-003", "response": "As an AI language model, I am unable to help.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-004", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-005", "response": "other", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-006", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-007", "response": "I cannot determine this.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-008", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-009", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-010", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-011", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-012", "response": "other", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-013", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-014", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-015", "response": "As an AI language model, I am unable to help.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-016", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-017", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-018", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-019", "response": "I cannot determine this.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-020", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-021", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-022", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-023", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-024", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-025", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-026", "response": "other", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-027", "response": "As an AI language model, I am unable to help.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-028", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-029", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-030", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-031", "response": "I cannot determine this.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-032", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-033", "response": "bug", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-034", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-035", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-036", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-037", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-038", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-039", "response": "As an AI language model, I am unable to help.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-040", "response": "feature_request", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-041", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-042", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-043", "response": "I cannot determine this.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-044", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-045", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-046", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-047", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-048", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-049", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-050", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-051", "response": "As an AI language model, I am unable to help.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-052", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-053", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-054", "response": "account_access", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-055", "response": "I cannot determine this.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-056", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-057", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-058", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-059", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-060", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-061", "response": "feature_request", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-062", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-063", "response": "As an AI language model, I am unable to help.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-064", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-065", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-066", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-067", "response": "I cannot determine this.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-068", "response": "billing", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-069", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-070", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-071", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-072", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-073", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-074", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-075", "response": "As an AI language model, I am unable to help.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-076", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-077", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-078", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-079", "response": "I cannot determine this.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-080", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-081", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-082", "response": "other", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-083", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-084", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-085", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-086", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-087", "response": "As an AI language model, I am unable to help.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-088", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-089", "response": "feature_request", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-090", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-091", "response": "I cannot determine this.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-092", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-093", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-094", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-095", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-096", "response": "feature_request", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-097", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-098", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-099", "response": "As an AI language model, I am unable to help.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-100", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-101", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-102", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-103", "response": "I cannot determine this.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-104", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-105", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-106", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-107", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-108", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-109", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-110", "response": "bug", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-111", "response": "As an AI language model, I am unable to help.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-112", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-113", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-114", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-115", "response": "I cannot determine this.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-116", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-117", "response": "billing", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-118", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-119", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-120", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-121", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-122", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-123", "response": "As an AI language model, I am unable to help.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-124", "response": "account_access", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-125", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-126", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-127", "response": "I cannot determine this.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-128", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-129", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-130", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-131", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-132", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-133", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-134", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-135", "response": "As an AI language model, I am unable to help.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-136", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-137", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-138", "response": "other", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-139", "response": "I cannot determine this.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-140", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-141", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-142", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-143", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-144", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-145", "response": "feature_request", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-146", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-147", "response": "As an AI language model, I am unable to help.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-148", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-149", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-150", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-151", "response": "I cannot determine this.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-152", "response": "billing", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-153", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-154", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-155", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-156", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-157", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-158", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-159", "response": "As an AI language model, I am unable to help.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-160", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-161", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-162", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-163", "response": "I cannot determine this.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-164", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-165", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-166", "response": "billing", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-167", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-168", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-169", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-170", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-171", "response": "As an AI language model, I am unable to help.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-172", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-173", "response": "billing", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-174", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-175", "response": "I cannot determine this.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-176", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-177", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-178", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-179", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-180", "response": "bug", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-181", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-182", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-183", "response": "As an AI language model, I am unable to help.", "criteria": "A login or password problem should be labelled account_access.", "label": false, "source": "synthetic"}
+{"case_id": "cal-184", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-185", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-186", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-187", "response": "I cannot determine this.", "criteria": "A request for new functionality should be labelled feature_request.", "label": false, "source": "synthetic"}
+{"case_id": "cal-188", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-189", "response": "other", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-190", "response": "billing", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-191", "response": "Possibly billing or possibly bug, hard to say without more detail.", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-192", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-193", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-194", "response": "bug", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-195", "response": "As an AI language model, I am unable to help.", "criteria": "A charge or invoice dispute should be labelled billing, not other.", "label": false, "source": "synthetic"}
+{"case_id": "cal-196", "response": "bug", "criteria": "A defect report about broken behaviour should be labelled bug, not other.", "label": true, "source": "synthetic"}
+{"case_id": "cal-197", "response": "feature_request", "criteria": "A request for new functionality should be labelled feature_request.", "label": true, "source": "synthetic"}
+{"case_id": "cal-198", "response": "account_access", "criteria": "A login or password problem should be labelled account_access.", "label": true, "source": "synthetic"}
+{"case_id": "cal-199", "response": "I cannot determine this.", "criteria": "General enquiries with no defect or charge should be labelled other.", "label": false, "source": "synthetic"}

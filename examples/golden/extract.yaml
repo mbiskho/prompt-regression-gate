@@ -1,0 +1,348 @@
+version: 2026-08-02.1
+description: Invoice field extraction. Schema is the spec, so the quality bar is free and exact.
+min_pass_rate: 0.8
+prompt:
+  id: extract
+  version: v1
+  model: mock/small
+  template_file: ../prompts/extract.v1.txt
+cases:
+- id: extract-000
+  inputs:
+    document: 'INVOICE INV-10000
+
+      From: Northwind Logistics
+
+      Total due 2,995.63 USD
+
+      Questions? Contact ap@northwind.com
+
+      '
+    expected_json:
+      invoice_number: INV-10000
+      vendor: Northwind Logistics
+      total: 2995.63
+      currency: USD
+    leak: ap@northwind.com
+  checks:
+    json_valid: true
+    json_schema: &id001
+      type: object
+      required:
+      - invoice_number
+      - vendor
+      - total
+      - currency
+      properties:
+        invoice_number:
+          type: string
+        vendor:
+          type: string
+        total:
+          type: number
+          minimum: 0
+        currency:
+          type: string
+          enum:
+          - USD
+          - EUR
+          - GBP
+          - IDR
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+    no_pii:
+    - email
+  tags:
+  - extraction
+  - pii
+- id: extract-001
+  inputs:
+    document: 'INVOICE INV-10137
+
+      From: Acme Industrial
+
+      Total due 1,459.54 EUR
+
+      '
+    expected_json:
+      invoice_number: INV-10137
+      vendor: Acme Industrial
+      total: 1459.54
+      currency: EUR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-002
+  inputs:
+    document: 'INVOICE INV-10274
+
+      From: Globex Consulting
+
+      Total due 5,900.30 GBP
+
+      '
+    expected_json:
+      invoice_number: INV-10274
+      vendor: Globex Consulting
+      total: 5900.3
+      currency: GBP
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-003
+  inputs:
+    document: 'INVOICE INV-10411
+
+      From: Initech Systems
+
+      Total due 763.23 IDR
+
+      '
+    expected_json:
+      invoice_number: INV-10411
+      vendor: Initech Systems
+      total: 763.23
+      currency: IDR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-004
+  inputs:
+    document: 'INVOICE INV-10548
+
+      From: Umbrella Supplies
+
+      Total due 4,878.63 USD
+
+      Questions? Contact ap@umbrella.com
+
+      '
+    expected_json:
+      invoice_number: INV-10548
+      vendor: Umbrella Supplies
+      total: 4878.63
+      currency: USD
+    leak: ap@umbrella.com
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+    no_pii:
+    - email
+  tags:
+  - extraction
+  - pii
+- id: extract-005
+  inputs:
+    document: 'INVOICE INV-10685
+
+      From: Soylent Foods
+
+      Total due 3,367.32 EUR
+
+      '
+    expected_json:
+      invoice_number: INV-10685
+      vendor: Soylent Foods
+      total: 3367.32
+      currency: EUR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-006
+  inputs:
+    document: 'INVOICE INV-10822
+
+      From: Northwind Logistics
+
+      Total due 635.03 GBP
+
+      '
+    expected_json:
+      invoice_number: INV-10822
+      vendor: Northwind Logistics
+      total: 635.03
+      currency: GBP
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-007
+  inputs:
+    document: 'INVOICE INV-10959
+
+      From: Acme Industrial
+
+      Total due 4,626.03 IDR
+
+      '
+    expected_json:
+      invoice_number: INV-10959
+      vendor: Acme Industrial
+      total: 4626.03
+      currency: IDR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-008
+  inputs:
+    document: 'INVOICE INV-11096
+
+      From: Globex Consulting
+
+      Total due 452.96 USD
+
+      Questions? Contact ap@globex.com
+
+      '
+    expected_json:
+      invoice_number: INV-11096
+      vendor: Globex Consulting
+      total: 452.96
+      currency: USD
+    leak: ap@globex.com
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+    no_pii:
+    - email
+  tags:
+  - extraction
+  - pii
+- id: extract-009
+  inputs:
+    document: 'INVOICE INV-11233
+
+      From: Initech Systems
+
+      Total due 3,970.77 EUR
+
+      '
+    expected_json:
+      invoice_number: INV-11233
+      vendor: Initech Systems
+      total: 3970.77
+      currency: EUR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-010
+  inputs:
+    document: 'INVOICE INV-11370
+
+      From: Umbrella Supplies
+
+      Total due 740.32 GBP
+
+      '
+    expected_json:
+      invoice_number: INV-11370
+      vendor: Umbrella Supplies
+      total: 740.32
+      currency: GBP
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction
+- id: extract-011
+  inputs:
+    document: 'INVOICE INV-11507
+
+      From: Soylent Foods
+
+      Total due 925.53 IDR
+
+      '
+    expected_json:
+      invoice_number: INV-11507
+      vendor: Soylent Foods
+      total: 925.53
+      currency: IDR
+  checks:
+    json_valid: true
+    json_schema: *id001
+    required_fields:
+    - invoice_number
+    - vendor
+    - total
+    - currency
+    max_latency_ms: 3000
+  tags:
+  - extraction

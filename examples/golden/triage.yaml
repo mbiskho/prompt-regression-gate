@@ -1,0 +1,285 @@
+version: 2026-08-02.1
+description: Support ticket triage. Closed label set, so almost everything is a deterministic assertion.
+min_pass_rate: 0.85
+prompt:
+  id: triage
+  version: v1
+  model: mock/small
+  template_file: ../prompts/triage.v1.txt
+cases:
+- id: triage-000
+  inputs:
+    ticket: I was charged twice for the Pro plan this month.
+  checks:
+    one_of: &id001
+    - billing
+    - bug
+    - feature_request
+    - account_access
+    - other
+    expected_label: billing
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - billing
+- id: triage-001
+  inputs:
+    ticket: Can you explain the $129.50 line on my March invoice?
+  checks:
+    one_of: *id001
+    expected_label: billing
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - billing
+- id: triage-002
+  inputs:
+    ticket: My card was declined but the subscription still shows active.
+  checks:
+    one_of: *id001
+    expected_label: billing
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - billing
+- id: triage-003
+  inputs:
+    ticket: We need the VAT number added to our receipts.
+  checks:
+    one_of: *id001
+    expected_label: billing
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - billing
+- id: triage-004
+  inputs:
+    ticket: Why did my renewal price go up without notice?
+  checks:
+    one_of: *id001
+    expected_label: billing
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - billing
+- id: triage-005
+  inputs:
+    ticket: The export button does nothing on the reports page since the update.
+  checks:
+    one_of: *id001
+    expected_label: bug
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - bug
+- id: triage-006
+  inputs:
+    ticket: App crashes when I upload a file larger than 25MB.
+  checks:
+    one_of: *id001
+    expected_label: bug
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - bug
+- id: triage-007
+  inputs:
+    ticket: Timestamps display in UTC even though my profile says CET.
+  checks:
+    one_of: *id001
+    expected_label: bug
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - bug
+- id: triage-008
+  inputs:
+    ticket: Search returns no results for terms that definitely exist.
+  checks:
+    one_of: *id001
+    expected_label: bug
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - bug
+- id: triage-009
+  inputs:
+    ticket: The dashboard shows stale numbers until I hard-refresh.
+  checks:
+    one_of: *id001
+    expected_label: bug
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - bug
+- id: triage-010
+  inputs:
+    ticket: Any chance of adding webhooks to the dashboard?
+  checks:
+    one_of: *id001
+    expected_label: feature_request
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - feature_request
+- id: triage-011
+  inputs:
+    ticket: It would help if we could bulk-edit tags.
+  checks:
+    one_of: *id001
+    expected_label: feature_request
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - feature_request
+- id: triage-012
+  inputs:
+    ticket: Please add SSO support for Okta.
+  checks:
+    one_of: *id001
+    expected_label: feature_request
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - feature_request
+- id: triage-013
+  inputs:
+    ticket: Can we get a dark mode for the reporting view?
+  checks:
+    one_of: *id001
+    expected_label: feature_request
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - feature_request
+- id: triage-014
+  inputs:
+    ticket: Would love scheduled exports to S3.
+  checks:
+    one_of: *id001
+    expected_label: feature_request
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - feature_request
+- id: triage-015
+  inputs:
+    ticket: I cannot log in, the reset email never arrives.
+  checks:
+    one_of: *id001
+    expected_label: account_access
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - account_access
+- id: triage-016
+  inputs:
+    ticket: Locked out after too many attempts, need a reset.
+  checks:
+    one_of: *id001
+    expected_label: account_access
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - account_access
+- id: triage-017
+  inputs:
+    ticket: My colleague left and we need to transfer workspace ownership.
+  checks:
+    one_of: *id001
+    expected_label: account_access
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - account_access
+- id: triage-018
+  inputs:
+    ticket: Two-factor codes are being rejected on my new phone.
+  checks:
+    one_of: *id001
+    expected_label: account_access
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - account_access
+- id: triage-019
+  inputs:
+    ticket: SSO redirect loops back to the login page.
+  checks:
+    one_of: *id001
+    expected_label: account_access
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - account_access
+- id: triage-020
+  inputs:
+    ticket: Just wanted to say the audit log update is great.
+  checks:
+    one_of: *id001
+    expected_label: other
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - other
+- id: triage-021
+  inputs:
+    ticket: Do you have a case study for logistics companies?
+  checks:
+    one_of: *id001
+    expected_label: other
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - other
+- id: triage-022
+  inputs:
+    ticket: Are you hiring on the support team?
+  checks:
+    one_of: *id001
+    expected_label: other
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - other
+- id: triage-023
+  inputs:
+    ticket: What is your data retention policy?
+  checks:
+    one_of: *id001
+    expected_label: other
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - other
+- id: triage-024
+  inputs:
+    ticket: Is there a status page I can subscribe to?
+  checks:
+    one_of: *id001
+    expected_label: other
+    max_words: 6
+    max_latency_ms: 3000
+  tags:
+  - other
+- id: triage-judge-000
+  inputs:
+    ticket: The thing is broken and I am furious, fix it now or we cancel.
+  checks:
+    one_of: *id001
+    max_words: 6
+  rubric: An angry escalation about a broken feature should be labelled bug, not other; the customer is
+    reporting a defect and threatening to cancel.
+  tags:
+  - judgement
+  expected: bug
+- id: triage-judge-001
+  inputs:
+    ticket: "Hi \u2014 following up on my previous three emails about the invoice."
+  checks:
+    one_of: *id001
+    max_words: 6
+  rubric: A repeated follow-up about an unpaid or disputed invoice should be labelled billing, not other.
+  tags:
+  - judgement
+  expected: billing
