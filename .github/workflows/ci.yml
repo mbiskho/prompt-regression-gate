@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - run: ruff check src tests
+      - run: ruff format --check src tests
+      - run: mypy
+      - run: pytest --cov=promptgate --cov-report=term-missing
+
+  gate:
+    name: the gate gates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+
+      # The tool has to demonstrate its own claim on every push, not just
+      # assert it in a README. Baseline on the good prompt, then run the
+      # deliberately-broken one and require a non-zero exit.
+      - name: Record a baseline on the known-good prompt
+        run: promptgate baseline examples/golden/triage.yaml
+
+      - name: A seeded regression must fail the build
+        run: |
+          set +e
+          promptgate --json diff.json gate examples/golden/triage.yaml \
+            --prompt-file examples/prompts/triage.v2.txt
+          status=$?
+          set -e
+          if [ $status -eq 0 ]; then
+            echo "::error::the seeded regression did not fail the gate"
+            exit 1
+          fi
+          python -c "
+          import json
+          d = json.load(open('diff.json'))
+          n = len(d['regressed'])
+          print(f'gate caught {n} regressed cases, pass rate {d[\"pass_rate_before\"]:.1%} -> {d[\"pass_rate_after\"]:.1%}')
+          assert n >= 20, f'expected the dropped instruction to break most cases, got {n}'
+          "
+
+      - name: An unchanged prompt must not fail the build
+        run: promptgate gate examples/golden/triage.yaml
+
+  calibration:
+    name: judge calibration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+
+      # A judge below the agreement bar must not be used to gate anything.
+      # This step failing means the judge stopped agreeing with the reference,
+      # which invalidates every rubric-scored case in the suite.
+      - run: promptgate --json calibration.json calibrate examples/labels.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: calibration
+          path: calibration.json

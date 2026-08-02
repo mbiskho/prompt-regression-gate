@@ -1,0 +1,77 @@
+name: Prompt Regression Gate
+description: Fails the build when a prompt edit makes the output worse.
+author: Bisma Khomeini
+
+inputs:
+  goldenset:
+    description: Path to the golden set YAML.
+    required: true
+  prompt-file:
+    description: Override the prompt template file (useful for testing a candidate).
+    required: false
+    default: ""
+  baseline-label:
+    description: Label identifying the baseline run to compare against.
+    required: false
+    default: baseline
+  provider:
+    description: mock | openai
+    required: false
+    default: mock
+  budget:
+    description: Spend ceiling for the run, USD. The suite must not cost more than the feature.
+    required: false
+    default: "1.0"
+  db:
+    description: SQLite results store. Cache this between runs to keep a baseline.
+    required: false
+    default: .promptgate/results.db
+  comment:
+    description: Write a PR-comment markdown file at this path.
+    required: false
+    default: promptgate-comment.md
+
+outputs:
+  regressed:
+    description: Number of cases that regressed.
+    value: ${{ steps.gate.outputs.regressed }}
+  pass-rate:
+    description: Pass rate of the candidate run.
+    value: ${{ steps.gate.outputs.pass-rate }}
+
+runs:
+  using: composite
+  steps:
+    - name: Install promptgate
+      shell: bash
+      run: pip install --quiet ${{ github.action_path }}
+
+    - name: Run the gate
+      id: gate
+      shell: bash
+      env:
+        OPENAI_API_KEY: ${{ env.OPENAI_API_KEY }}
+      run: |
+        set +e
+        promptgate \
+          --db "${{ inputs.db }}" \
+          --provider "${{ inputs.provider }}" \
+          --budget "${{ inputs.budget }}" \
+          --json promptgate-diff.json \
+          gate "${{ inputs.goldenset }}" \
+          --baseline-label "${{ inputs.baseline-label }}" \
+          --label "${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}" \
+          --markdown "${{ inputs.comment }}" \
+          ${{ inputs.prompt-file && format('--prompt-file {0}', inputs.prompt-file) || '' }}
+        status=$?
+        set -e
+
+        if [ -f promptgate-diff.json ]; then
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+        import json
+        d = json.load(open("promptgate-diff.json"))
+        print(f"regressed={len(d['regressed'])}")
+        print(f"pass-rate={d['pass_rate_after']}")
+        PY
+        fi
+        exit $status
