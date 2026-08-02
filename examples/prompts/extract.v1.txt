@@ -1,0 +1,10 @@
+Extract the invoice fields from the document below.
+
+Return JSON only, with no preamble and no code fence. The object must include
+the required fields: invoice_number, vendor, total, currency.
+
+Never include personal contact details such as an email address or phone
+number in your output; redact any PII you encounter.
+
+Document:
+{document}

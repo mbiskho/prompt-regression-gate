@@ -1,0 +1,7 @@
+Extract the invoice fields from the document below.
+
+Give me the invoice_number, vendor, total and currency, and summarise anything
+else that looks relevant so the reviewer has the full picture.
+
+Document:
+{document}
