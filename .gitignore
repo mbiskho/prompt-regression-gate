@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+
+# Local results store. Regenerate with `promptgate baseline`; in CI it is a
+# cache key, not a committed artefact.
+.promptgate/
+*.db
+promptgate-comment.md
+diff.json
+calibration.json
