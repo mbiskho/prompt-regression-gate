@@ -7,6 +7,10 @@ valid, required field present, no PII, under the latency budget — and a judge
 model only where you can't, both running against a versioned golden set. The
 output is pass/fail plus a diff naming which cases regressed.
 
+![Prompt regression gate project overview](reports/project-overview.png)
+
+![Prompt regression gate workflow](reports/workflow.png)
+
 ```bash
 pip install -e .
 promptgate baseline examples/golden/triage.yaml   # record the current behaviour
