@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460">
+    <rect x="0" y="0" width="1280" height="460" rx="0" fill="#f7f8f6" stroke="none"/>
+    <text x="52" y="57" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >SYSTEM WORKFLOW</text>
+    <text x="52" y="104" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="650" >Prompt Regression Gate</text>
+    <text x="52" y="132" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" >From input to an auditable result</text>
+    <rect x="52" y="164" width="208" height="190" rx="8" fill="#ffffff" stroke="#d8ded9"/>
+      <rect x="52" y="164" width="208" height="6" rx="3" fill="#4c70a2"/>
+      <text x="69" y="197" fill="#4c70a2" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >01</text>
+      <text x="69" y="244" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="650" >Versioned golden set</text>
+      <line x1="69" y1="286" x2="243" y2="286" stroke="#d8ded9"/>
+      <text x="69" y="313" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Expected behavior</text>
+      <path d="M266 222h26m-8-6 8 6-8 6" fill="none" stroke="#9da9a1" stroke-width="2"/><rect x="298" y="164" width="208" height="190" rx="8" fill="#ffffff" stroke="#d8ded9"/>
+      <rect x="298" y="164" width="208" height="6" rx="3" fill="#24634e"/>
+      <text x="315" y="197" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >02</text>
+      <text x="315" y="244" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="650" >Run prompt cases</text>
+      <line x1="315" y1="286" x2="489" y2="286" stroke="#d8ded9"/>
+      <text x="315" y="313" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Pinned model version</text>
+      <path d="M512 222h26m-8-6 8 6-8 6" fill="none" stroke="#9da9a1" stroke-width="2"/><rect x="544" y="164" width="208" height="190" rx="8" fill="#ffffff" stroke="#d8ded9"/>
+      <rect x="544" y="164" width="208" height="6" rx="3" fill="#ad583d"/>
+      <text x="561" y="197" fill="#ad583d" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >03</text>
+      <text x="561" y="244" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="650" >Assert + judge</text>
+      <line x1="561" y1="286" x2="735" y2="286" stroke="#d8ded9"/>
+      <text x="561" y="313" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Human-calibrated judge</text>
+      <path d="M758 222h26m-8-6 8 6-8 6" fill="none" stroke="#9da9a1" stroke-width="2"/><rect x="790" y="164" width="208" height="190" rx="8" fill="#ffffff" stroke="#d8ded9"/>
+      <rect x="790" y="164" width="208" height="6" rx="3" fill="#4c70a2"/>
+      <text x="807" y="197" fill="#4c70a2" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >04</text>
+      <text x="807" y="244" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="650" >Diff regressions</text>
+      <line x1="807" y1="286" x2="981" y2="286" stroke="#d8ded9"/>
+      <text x="807" y="313" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Show changed cases</text>
+      <path d="M1004 222h26m-8-6 8 6-8 6" fill="none" stroke="#9da9a1" stroke-width="2"/><rect x="1036" y="164" width="208" height="190" rx="8" fill="#ffffff" stroke="#d8ded9"/>
+      <rect x="1036" y="164" width="208" height="6" rx="3" fill="#24634e"/>
+      <text x="1053" y="197" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >05</text>
+      <text x="1053" y="244" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="650" >Pass or fail CI</text>
+      <line x1="1053" y1="286" x2="1227" y2="286" stroke="#d8ded9"/>
+      <text x="1053" y="313" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >PR gate + nightly run</text>
+      
+    <rect x="52" y="391" width="1176" height="40" rx="5" fill="#e7f0eb" stroke="none"/>
+    <text x="70" y="416" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="550" >A calibrated judge and transparent per-case diff make the CI decision inspectable.</text>
+  </svg>

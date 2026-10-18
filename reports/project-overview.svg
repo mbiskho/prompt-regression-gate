@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <rect x="0" y="0" width="1280" height="720" rx="0" fill="#f7f8f6" stroke="none"/>
+    <rect x="0" y="0" width="1280" height="9" fill="#24634e"/>
+    <text x="52" y="53" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >LLM EVALUATION · CI QUALITY GATE</text>
+    <text x="52" y="100" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="650" >Prompt Regression Gate</text>
+    <text x="52" y="130" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" >Catch prompt changes that regress a versioned golden set before they ship.</text>
+    <rect x="984" y="38" width="244" height="31" rx="15" fill="#e7f0eb" stroke="none"/>
+    <text x="1106" y="58" fill="#24634e" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" text-anchor="middle">DETERMINISTIC + CALIBRATED JUDGE</text>
+    <rect x="52" y="174" width="386" height="95" rx="7" fill="#ffffff" stroke="#d8ded9"/>
+      <text x="70" y="199" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" >TEST INPUTS</text>
+      <text x="70" y="237" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="650" >Versioned</text>
+      <text x="212" y="236" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >golden dataset</text><rect x="452" y="174" width="386" height="95" rx="7" fill="#ffffff" stroke="#d8ded9"/>
+      <text x="470" y="199" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" >CHECKS</text>
+      <text x="470" y="237" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="650" >2 types</text>
+      <text x="612" y="236" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >assertions + semantic judge</text><rect x="852" y="174" width="386" height="95" rx="7" fill="#ffffff" stroke="#d8ded9"/>
+      <text x="870" y="199" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" >RUN MODES</text>
+      <text x="870" y="237" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="650" >2</text>
+      <text x="1012" y="236" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >pull request + nightly drift</text>
+    <rect x="52" y="293" width="806" height="371" rx="7" fill="#ffffff" stroke="#d8ded9"/>
+    <text x="78" y="326" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >PROMPT CHANGE · CASE-BY-CASE DIFF</text>
+    <text x="828" y="326" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="600" text-anchor="end">DETAIL</text>
+    <rect x="78" y="359" width="752" height="50" rx="5" fill="#ffffff" stroke="#d8ded9"/>
+      <circle cx="98" cy="384" r="5" fill="#24634e"/>
+      <text x="116" y="380" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" >Schema validity</text>
+      <text x="116" y="398" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Deterministic assertion</text><rect x="78" y="422" width="752" height="50" rx="5" fill="#fafbfa" stroke="#d8ded9"/>
+      <circle cx="98" cy="447" r="5" fill="#4c70a2"/>
+      <text x="116" y="443" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" >Required content</text>
+      <text x="116" y="461" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Deterministic assertion</text><rect x="78" y="485" width="752" height="50" rx="5" fill="#ffffff" stroke="#d8ded9"/>
+      <circle cx="98" cy="510" r="5" fill="#ad583d"/>
+      <text x="116" y="506" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" >Answer quality</text>
+      <text x="116" y="524" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >Judge calibrated against human labels</text>
+    <rect x="878" y="293" width="350" height="371" rx="7" fill="#ffffff" stroke="#d8ded9"/>
+    <text x="904" y="326" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" >WHAT THIS COVERS</text>
+    <text x="904" y="354" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" >Project dimensions</text>
+    <line x1="904" y1="368" x2="1202" y2="368" stroke="#d8ded9"/>
+    <circle cx="914" cy="390" r="5" fill="#24634e"/><text x="930" y="394" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Cases</text><line x1="904" y1="408" x2="1202" y2="408" stroke="#d8ded9"/><circle cx="914" cy="430" r="5" fill="#4c70a2"/><text x="930" y="434" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Pass</text><line x1="904" y1="448" x2="1202" y2="448" stroke="#d8ded9"/><circle cx="914" cy="470" r="5" fill="#ad583d"/><text x="930" y="474" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Diff</text><line x1="904" y1="488" x2="1202" y2="488" stroke="#d8ded9"/><circle cx="914" cy="510" r="5" fill="#24634e"/><text x="930" y="514" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Judge</text><line x1="904" y1="528" x2="1202" y2="528" stroke="#d8ded9"/><circle cx="914" cy="550" r="5" fill="#4c70a2"/><text x="930" y="554" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Cost</text><line x1="904" y1="568" x2="1202" y2="568" stroke="#d8ded9"/><circle cx="914" cy="590" r="5" fill="#ad583d"/><text x="930" y="594" fill="#202824" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="500" >Gate</text>
+    <text x="904" y="690" fill="#65716a" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="400" >A calibrated judge and transparent per-case diff make the CI decision inspectable.</text>
+  </svg>
